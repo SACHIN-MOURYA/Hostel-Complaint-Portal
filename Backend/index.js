@@ -35,8 +35,8 @@ const cloudinary = require("./config/cloudinary");
 cloudinary.cloudinaryConnect();
 
 // routing
- const routes = require("./routes/index");
- app.use("/api/v1", routes);
+const testingRoutes = require("./routes/testingRoutes");
+app.use("/api/v1", testingRoutes);
 
 // start server
 app.listen(PORT, () => {
